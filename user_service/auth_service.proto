@@ -33,4 +33,5 @@ message AuthResponse{
     string profile_image_url = 9;
     string type  = 10;
     string created_at = 11;
+    string access_token = 12;
 }
