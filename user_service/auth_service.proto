@@ -6,7 +6,7 @@ import "google/protobuf/empty.proto";
 
 service AuthService {
     rpc Register(RegisterRequest) returns  (google.protobuf.Empty) {};
-    rpc Verify(VerifyRequest) returns (AuthResponse) {}
+    rpc Verify(VerifyRequest) returns (AuthResponse) {};
 }
 
 message RegisterRequest{
