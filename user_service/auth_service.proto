@@ -7,7 +7,7 @@ import "google/protobuf/empty.proto";
 service AuthService {
     rpc Register(RegisterRequest) returns  (google.protobuf.Empty) {};
     rpc Verify(VerifyRequest) returns (AuthResponse) {};
-    rpc VerifyToken(VerifyRequest) returns (AuthPayload) {};
+    rpc VerifyToken(VerifyTokenRequest) returns (AuthPayload) {};
     rpc Login(LoginRequest) returns (AuthResponse) {};
     rpc ForgotPassword(ForgotPasswordRequest) returns (google.protobuf.Empty){};
     rpc VerifyForgotPassword(VerifyRequest) returns (AuthResponse) {};
